@@ -23,6 +23,7 @@
   background: $gray;
   border-radius: 16px;
   position: relative;
+  margin-bottom: 88px;
 
   overflow: hidden;
   &__window {
@@ -70,10 +71,10 @@
     line-height: 24px;
 
     &__image {
-      width: 21px;
-      height: 21px;
+      width: 30px;
+      height: 30px;
       position: absolute;
-      left: 17.5px;
+      left: 21px;
       top: 55px;
     }
     &__title--gray{
