@@ -1,8 +1,24 @@
 .hero {
   padding: 74px 16px 0;
+
+  @media (min-width: $desktop){
+    &__image-containerTwo {
+      position: absolute;
+      top: 111px;
+      right: 603px;
+    }
+  }
+  
+  
+  @media (min-width: $tablet){
+    max-width: 768px;
+    margin: 0 auto;
+  }
   
 
   &__image {
+    position: relative;
+   
     box-sizing: content-box;
     width: 96px;
     height: 96px;
@@ -11,6 +27,9 @@
     border: 6px solid #f6f9fd;
   }
   &__image-container {
+    @media (min-width: $desktop){
+      position: relative;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +42,25 @@
   }
 
   &__hello {
+    position: relative;
     display: none;
+    @media (min-width: $desktop){
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: #fff;
+      border-radius: 16px;
+      width: 230px;
+      height: 72px;
+      background-color: $blue;
+      padding: 16px 0px 0px 19px;
+      position: absolute;
+      right: 80px;
+      top: -30px;     
+      display: block;
+    
+      
+    }
   }
   &__special {
     color: $blue;
